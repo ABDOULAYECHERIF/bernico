@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bernico R10 | Luxury Performance RIB</title>
+  <title>Bernico FTX 27 B | Luxury Performance RIB</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
   <style>
@@ -41,30 +41,17 @@
       padding: 0 20px;
     }
 
+    /* Header */
     .boat-header {
-      position: relative;
-      height: 400px; /* Adjust to your preferred height */
+      background-image: url('https://i.postimg.cc/Wp7N055V/cc6c391e-2cee-4f7c-896f-3bb950f2d66d.jpg');
+      background-size: cover; /* Makes the image cover the element */
+
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents tiling */
       color: white;
+      padding: 200px 0 200px;
       text-align: center;
-      overflow: hidden;
     }
-
-    .background-video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* Ensures the video fills the container like background-size: cover */
-      z-index: -1; /* Places video behind content */
-    }
-
-    .header-content {
-      position: relative;
-      z-index: 1; /* Ensures content stays above the video */
-      padding: 200px 0;
-    }
-
 
     .boat-title {
       font-size: 3rem;
@@ -520,17 +507,10 @@
 <body>
 <!-- Header -->
 <header class="boat-header">
-  <div class="boat-header">
-    <video autoplay loop playsinline class="background-video">
-      <source src="https://res.cloudinary.com/dtcgjrxfq/video/upload/v1756838726/freecompress-Bernico_Showcase_181221_01_02_TK_ymtgkp.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="header-content">
+  <div class="container">
+    <h1 class="boat-title"></h1>
 
-      <p>Bernico RXP14</p>
-    </div>
   </div>
-
 </header>
 
 <!-- Breadcrumb -->
@@ -539,28 +519,25 @@
     <div class="breadcrumb-links">
       <a href="index.html">Home</a>
       <a href="#">Boats</a>
-      <a href="#">RIB Series</a>
-      <a href="#" class="active">Bernico RXP14</a>
+      <a href="#">RIGID Models</a>
+      <a href="#" class="active">Bernico FTX -B</a>
     </div>
   </div>
 </div>
-
-
-
 
 <!-- Boat Gallery -->
 <section class="container">
   <div class="boat-gallery">
     <div class="gallery-main">
-      <img src="https://i.postimg.cc/13FmRmqv/210912-LDO-4690.jpg" alt="Bernico R7 Main Image">
+      <img src="https://i.postimg.cc/sxK3y2Mx/b25e5906-5d19-4b43-9346-e5423f466d41.jpg" alt="Bernico R7 Main Image">
     </div>
     <div class="gallery-thumbnails">
-      <img src="https://i.postimg.cc/WpfTMFm9/210912-LDO-7757.jpg" alt="Bernico R7 Interior">
-      <img src="https://i.postimg.cc/MH4wxNKk/210912-LDO-8051-kopie.jpg" alt="Bernico R7 Side View">
-
-      <img src="https://i.postimg.cc/y80K4LM5/210912-LDO-8218.jpg" alt="Bernico R7 Dashboard">
-      <img src="https://i.postimg.cc/CMc9W3zd/DJI-0450.jpg" alt="Bernico R7 Dashboard">
-      <img src="https://i.postimg.cc/FFqXftm8/IMG-8214.jpg" alt="Bernico R7 Dashboard">
+      <img src="https://i.postimg.cc/rFnqPK6Y/IMG-7823.avif" alt="Bernico R7 Interior">
+      <img src="https://i.postimg.cc/VNM1vgJ3/IMG-5589.avif" alt="Bernico R7 Side View">
+      <img src="https://i.postimg.cc/sxK3y2Mx/b25e5906-5d19-4b43-9346-e5423f466d41.jpg" alt="Bernico R7 Back View">
+      <img src="https://i.postimg.cc/sgbs3qgY/IMG-5587.avif" alt="Bernico R7 Dashboard">
+      <img src="https://i.postimg.cc/Gm4bwdd3/IMG-7928.avif" alt="Bernico R7 Dashboard">
+      <img src="https://i.postimg.cc/Wp7N055V/cc6c391e-2cee-4f7c-896f-3bb950f2d66d.jpg" alt="Bernico R7 Dashboard">
 
 
 
@@ -568,49 +545,73 @@
   </div>
 </section>
 
+<style>
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px; /* nicely balanced width */
+    margin: 40px auto; /* center it and add breathing space */
+    border-radius: 15px; /* soft rounded corners */
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* elegant shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .video-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  .video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* keeps it proportional on all devices */
+    border: none;
+    display: block;
+  }
+</style>
+
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/doe7994uLps" allowfullscreen></iframe>
+</div>
+
+
+
+
 <!-- Boat Details -->
 <section class="container boat-details">
   <div class="boat-description">
-    <h2>About the Bernico RXP14</h2>
-    <p>The Bernico RXP14 is the flagship of the Bernico range – a 14-meter masterpiece that blends sheer power with ultimate comfort. </p>
-    <p>Its striking design, unmatched stability, and exhilarating speed make it the perfect choice for those who demand more from the water. </p>
-    <p>Spacious enough for family and friends, yet agile and responsive at any pace, the RXP14 transforms every journey into a first-class experience. Born from Bernico’s racing DNA, it redefines what a performance powerboat can be.</p>
+    <h2>About the Bernico FTX -B</h2>
+    <p>The Bernico FTX 27 B is built for those who crave performance and precision. </p>
+    <p>At 27 feet, this powerboat combines an aggressive, streamlined design with Bernico’s proven racing hull technology, delivering breathtaking speed and razor-sharp handling. </p>
+    <p>Comfortable seating and smart deck layout make it just as enjoyable for relaxed cruising with friends as for adrenaline-fueled runs at full throttle. The FTX 27 B embodies Bernico’s promise: performance without compromise.</p>
   </div>
 
   <div class="specifications">
     <h3>Specifications</h3>
     <div class="spec-item">
       <span class="spec-label">Length</span>
-      <span class="spec-value">  14.30 m </span>
+      <span class="spec-value">  8.5 m </span>
     </div>
     <div class="spec-item">
       <span class="spec-label">Width</span>
-      <span class="spec-value">3.48 m</span>
+      <span class="spec-value">2.00 m</span>
     </div>
     <div class="spec-item">
       <span class="spec-label">Draft</span>
-      <span class="spec-value">0.75</span>
+      <span class="spec-value">0.45 m</span>
     </div>
 
     <div class="spec-item">
-      <span class="spec-label">Weight Hull</span>
-      <span class="spec-value">2800 kg</span>
-    </div>
-    <div class="spec-item">
       <span class="spec-label">Fuel Capacity</span>
-      <span class="spec-value">800 L</span>
-    </div>
-    <div class="spec-item">
-      <span class="spec-label">Fresh Water Cap</span>
-      <span class="spec-value">150 L</span>
+      <span class="spec-value">200 L</span>
     </div>
     <div class="spec-item">
       <span class="spec-label">Seating Capacity</span>
-      <span class="spec-value">11</span>
+      <span class="spec-value">5 </span>
     </div>
     <div class="spec-item">
       <span class="spec-label">Engine Application</span>
-      <span class="spec-value">Single, double, Triple or Quad</span>
+      <span class="spec-value">Single Engine</span>
     </div>
     <div class="spec-item">
       <span class="spec-label">Materials</span>
@@ -623,8 +624,8 @@
 <!-- Call to Action -->
 <section class="container">
   <div class="boat-cta">
-    <h2>Experience the Bernico R10</h2>
-    <p>The Bernico RXP14 is the flagship of the Bernico range – a 14-meter masterpiece that blends sheer power with ultimate comfort. </p>
+    <h2>Experience the  FTX 27 B </h2>
+    <p>The Bernico FTX 27 B is built for those who crave performance and precision. </p>
 
   </div>
 </section>
